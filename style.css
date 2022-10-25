@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 15px;
+    position: fixed;
+    z-index: 2;
+}
+
+.welcome-image{
+    position: relative;
+    padding-top:300px; 
+    background: rgba(24, 24, 24, 0.685) url(bgfront.png);
+    color: rgba(240, 248, 255, 0);
+    height: 450px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;  
+    z-index: 0;
+    animation: welcome;
+  
+}
+
+.welcome-text {
+    position: relative;
+    color: aliceblue;
+    font-size: 70px;
+    font-family: 'Coda', cursive;   
+    margin-inline: 200px;
+    padding: 10px;
+    bottom: 100px;
+    right: 150px;
+    
+}
+
+.welcome-text2 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: 'Coda', cursive;   
+    margin-top: -120px;
+    left: 450px;
+    animation: slideme2 3s ease-in ;
+    
+}
+
+.welcome-text3 {
+    position: relative;
+    color: aliceblue;
+    font-size: 70px;
+    font-family: 'Coda', cursive;   
+    margin-top: 0px;
+    left: 500px;
+    animation: slideme3 5.5s ease-in ;
+    
+}
+
+.welcome-text4 {
+    font-weight: bold;
+    position: relative;
+    color: aliceblue;
+    font-size: 90px;
+    font-family: 'Coda', cursive;   
+    margin-top: 0px;
+    left: 750px;
+    animation: slideme4 7s ease-in ;
+    
+}
+
+#animationwelcome {
+    margin: -50px;
+}
+
+#animationwelcome .welcome-text {
+    animation: slideme 2s ease-in;
+
+}
+
+@keyframes slideme {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+@keyframes slideme2 {
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+@keyframes slideme3 {
+    0%{
+        transform: translateX(-1500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+@keyframes slideme4 {
+    0%{
+        transform: translateY(-1600px);
+    }
+     100%{
+        transform: skew(0deg);
+    }
+}
+
+
+
+#jobs-color {
+    color: brown;
+}
+
+#career-color {
+    color: brown;
+}
+
+.here01 {
+    color: brown;
+}
+ 
+#categories {
+    position: relative;
+    transition: 1s; 
+    
+}
+
+#categories :hover {
+    transform: translateX(-2px);
+    
+}
+
+header article {
+    color: aliceblue;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    background-color: rgba(236, 3, 3, 0.774);
+    border-radius: 8px 8px;
+    margin-top: 24px;
+    cursor: pointer;
+    padding-top: 5px;
+    text-align: center;
+    width: 90px;
+    margin-inline-start: 5rem;
+    right: 130px;
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+header p {
+    color: aliceblue;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    background-color: rgba(236, 3, 3, 0.774);
+    border-radius: 8px 8px;
+    margin-top: 61px;
+    cursor: pointer;
+    padding-top: 2px;
+    text-align: center;
+    width: 90px;
+    margin-inline-start: 5rem;
+    right: 130px;
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    
+
+}
+
+img {
+    position: absolute;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(12, 12, 12);
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 9rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px rgb(247, 180, 180);
+}
+
+.job1 {
+    padding-top: 80px;
+    text-shadow: 3px 3px black;
+    padding-left: 8rem;
+    position:unset;
+    z-index: 1;
+    
+}
+
+h2 {
+    padding-top: 5rem;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    text-align: center;
+    background: url(explore.jpg);
+    text-shadow: 3px 3px aliceblue;
+    z-index: 1;
+}
+
+.content1 {
+    padding-left: 35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding-right: 40px;
+}
+
+.careerstarts {
+    padding-top: 9rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.call-center {
+    text-align: center;
+    text-shadow: 3px 3px aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    background: rgba(0, 0, 0, 0.281) url(call-center-bg.webp);
+    background-blend-mode: darken;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.joblist {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.panatiatic {
+    padding-top: 10rem;
+    position: absolute;
+}
+
+.panatiatic_text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panatiatic_title {
+    font-size: 30px;
+   
+    font-family: 'Staatliches', cursive;
+    padding-top: 150px;
+    padding-left: 430px;
+    
+    
+}
+
+.walk-in-panatiatic {
+   padding-left: 27rem;
+   color: rgb(83, 83, 83);
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.click-apply-1 {
+    padding-left: 27rem;
+    color: rgb(83, 83, 83);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ttec {
+    padding-top: ;
+    position: absolute;
+}
+
+.ttec_title {
+    font-size: 30px;
+    
+    font-family: 'Staatliches', cursive;
+    
+    padding-left: 430px;
+}
+
+.ttec_text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.click-apply-2 {
+    padding-left: 27rem;
+    color: rgb(83, 83, 83);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ubiquity {
+   
+}
+
+
+.Ubiquity-text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ubiquity_title {
+    font-size: 30px;
+    
+    font-family: 'Staatliches', cursive;
+    
+    padding-left: 430px;
+}
+
+.metacom {
+   
+ }
+
+ .metacom-text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.metacom_title {
+    font-size: 30px;
+    
+    font-family: 'Staatliches', cursive;
+    
+    padding-left: 430px;
+}
+
+.transcom {
+
+}
+
+.transcom_title {
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    
+    padding-left: 430px;
+}
+
+.reach {
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 2px;
+  
+}
+
+.categories {
+    font-size: 25px;
+    margin-top: 2px;
+    padding: 2px;
+}
+
+.reach :hover{ 
+     transform: translateX(-5px);
+   
+    }
+
+.government-job {
+    text-align: center;
+    text-shadow: 3px 3px aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    background: rgba(0, 0, 0, 0.281) url(NGC.jpg);
+    background-position-y: center;
+    background-blend-mode: darken;
+    padding-top: 30px;
+    padding-bottom: 30px;
+        
+    }
+
+.government-job_title {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+        
+    padding-left: 350px;
+    }
+
+.ngc-text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.government-jobs {
+
+}
+
+.transcom-text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.-text {
+
+    padding-top: 1rem;
+    padding-left: 27rem;
+    padding-right: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.government-jobs_title {
+    font-size: 30px;
+   
+    font-family: 'Staatliches', cursive;
+        
+    padding-left: 430px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    
+    background: radial-gradient(circle, rgba(223,0,117,1) 0%, rgba(129,21,21,1) 62%, rgba(28,28,28,1) 100%);
+    height: 200px;
+}
+
+.footer-p {
+    padding-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
